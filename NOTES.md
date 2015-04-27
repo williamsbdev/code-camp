@@ -16,7 +16,8 @@ Presentation Notes
     ember b
 
 - show off what this gives you in dist/
--- unminified code with test code
+ - unminified code
+ - with test code
 
 # Building app for production
 
@@ -24,8 +25,8 @@ Presentation Notes
     ember b --env=production
 
 - show off what this gives you in dist/
--- minified version of code
--- you can pick up this folder and deploy this
+ - minified version of code
+ - you can pick up this folder and deploy this
 
 # Now you actually want to see and play with the app
 
@@ -63,15 +64,15 @@ we can fix the failing assertion again with:
 
 - add login test to show that we need username/password field
 - want to refactor to use the [ember-cli-password-toggle]
--- add ember-cli-password-toggle to package.json (currently version 1.1.0 is latest)
--- `npm install`
+ - add ember-cli-password-toggle to package.json (currently version 1.1.0 is latest)
+ - `npm install`
 
 # Ember Addons:  How did that work!?!?
 
 - the ember-cli ecosystem has [Ember Addons]
--- this is a very easy way to share code across ember applications
--- an addon is simply a very opinionate node module
--- ember applications know how to pull in and namespace addons
+ - this is a very easy way to share code across ember applications
+ - an addon is simply a very opinionate node module
+ - ember applications know how to pull in and namespace addons
 
 # Let's create an addon
 
