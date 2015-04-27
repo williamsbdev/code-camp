@@ -62,6 +62,8 @@ we can fix the failing assertion again with:
 # Let's start building a real app and see what else we can learn
 
 - add login test to show that we need username/password field
+- want to refactor to use the [ember-cli-password-toggle]
 
 
 [blueprints]: http://www.ember-cli.com/#generators-and-blueprints
+[ember-cli-password-toggle]: https://github.com/nchristus/ember-cli-password-toggle
