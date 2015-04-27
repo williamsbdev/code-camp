@@ -22,5 +22,8 @@ test('visiting /login', function(assert) {
 
   andThen(function() {
     assert.equal(currentURL(), '/login');
+    assert.equal(find(".username").length, 1);
+    assert.equal(find(".password").length, 1);
+    assert.equal(find(".password").attr("type"), "password");
   });
 });

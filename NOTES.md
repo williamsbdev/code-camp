@@ -57,6 +57,11 @@ we can fix the failing assertion again with:
 - ember-cli has lots of nice [blueprints]
 - I don't use them
 - I believe they are incredibly helpful for new people learning Ember!
+- Go delete the unit test file for the generated route
+
+# Let's start building a real app and see what else we can learn
+
+- add login test to show that we need username/password field
 
 
 [blueprints]: http://www.ember-cli.com/#generators-and-blueprints
