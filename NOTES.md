@@ -63,7 +63,25 @@ we can fix the failing assertion again with:
 
 - add login test to show that we need username/password field
 - want to refactor to use the [ember-cli-password-toggle]
+-- add ember-cli-password-toggle to package.json (currently version 1.1.0 is latest)
+-- `npm install`
+
+# Ember Addons:  How did that work!?!?
+
+- the ember-cli ecosystem has [Ember Addons]
+-- this is a very easy way to share code across ember applications
+-- an addon is simply a very opinionate node module
+-- ember applications know how to pull in and namespace addons
+
+# Let's create an addon
+
+    ember addon foobar
+
+- this will create an addon with the namespace of `foobar`
+- addon/ will have namespace of addon
+- app/ will be copied into the host app
 
 
 [blueprints]: http://www.ember-cli.com/#generators-and-blueprints
 [ember-cli-password-toggle]: https://github.com/nchristus/ember-cli-password-toggle
+[Ember Addons]: http://emberaddons.com
