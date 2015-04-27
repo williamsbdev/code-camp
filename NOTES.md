@@ -51,3 +51,12 @@ we can fix the failing assertion again with:
 
     ember generate route login
     ember g route login
+
+# What is this generate command?
+
+- ember-cli has lots of nice [blueprints]
+- I don't use them
+- I believe they are incredibly helpful for new people learning Ember!
+
+
+[blueprints]: http://www.ember-cli.com/#generators-and-blueprints
