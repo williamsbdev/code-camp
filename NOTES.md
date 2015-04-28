@@ -69,7 +69,7 @@ we can fix the failing assertion again with:
 # Ember Addons:  How did that work!?!?
 
 - the ember-cli ecosystem has [Ember Addons]
--- this is a very easy way to share code across ember applications
+ -- this is a very easy way to share code across ember applications
 -- an addon is simply a very opinionate node module
 -- ember applications know how to pull in and namespace addons
 
@@ -80,6 +80,8 @@ we can fix the failing assertion again with:
 - this will create an addon with the namespace of `foobar`
 - addon/ will have namespace of addon
 - app/ will be copied into the host app
+- publishing to npm will make this addon available for inclusion
+- you can use alternatives if it is not to be shared (internal git repo)
 
 
 [blueprints]: http://www.ember-cli.com/#generators-and-blueprints
