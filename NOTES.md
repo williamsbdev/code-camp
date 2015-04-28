@@ -1,33 +1,34 @@
 Presentation Notes
 ------------------
 
-# Getting started with nothing
+## Getting started with nothing
 
     ember new <app-name>
 
-# Getting started with directory created
+##  Getting started with directory created
 
     ember init
     ember i
 
-# Building app
+## Building app
 
     ember build
     ember b
 
 - show off what this gives you in dist/
--- unminified code with test code
+ - unminified code
+ - with test code
 
-# Building app for production
+## Building app for production
 
     ember build --env=production
     ember b --env=production
 
 - show off what this gives you in dist/
--- minified version of code
--- you can pick up this folder and deploy this
+ - minified version of code
+ - you can pick up this folder and deploy this
 
-# Now you actually want to see and play with the app
+## Now you actually want to see and play with the app
 
     ember server
     ember s
@@ -35,14 +36,14 @@ Presentation Notes
 - you can interact with your app!
 - it watches for file changes and reloads the page for you
 
-# Now you want to run tests
+## Now you want to run tests
 
     ember test
     ember t
     ember test --server
     ember t -s
 
-# Now I want to write some code (practicing TDD of course)
+## Now I want to write some code (practicing TDD of course)
 
     ember generate acceptance-test login
     ember g acceptance-test login
@@ -52,28 +53,28 @@ we can fix the failing assertion again with:
     ember generate route login
     ember g route login
 
-# What is this generate command?
+## What is this generate command?
 
 - ember-cli has lots of nice [blueprints]
 - I don't use them
 - I believe they are incredibly helpful for new people learning Ember!
 - Go delete the unit test file for the generated route
 
-# Let's start building a real app and see what else we can learn
+## Let's start building a real app and see what else we can learn
 
 - add login test to show that we need username/password field
 - want to refactor to use the [ember-cli-password-toggle]
--- add ember-cli-password-toggle to package.json (currently version 1.1.0 is latest)
--- `npm install`
+ - add ember-cli-password-toggle to package.json (currently version 1.1.0 is latest)
+ - `npm install`
 
-# Ember Addons:  How did that work!?!?
+## Ember Addons:  How did that work!?!?
 
 - the ember-cli ecosystem has [Ember Addons]
- -- this is a very easy way to share code across ember applications
--- an addon is simply a very opinionate node module
--- ember applications know how to pull in and namespace addons
+ - this is a very easy way to share code across ember applications
+ - an addon is simply a very opinionate node module
+ - ember applications know how to pull in and namespace addons
 
-# Let's create an addon
+## Let's create an addon
 
     ember addon foobar
 
