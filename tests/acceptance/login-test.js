@@ -17,13 +17,16 @@ module('Acceptance: Login', {
   }
 });
 
-test('visiting /login', function(assert) {
+test('login will transition user to sessions route', function(assert) {
   visit('/login');
-
   andThen(function() {
     assert.equal(currentURL(), '/login');
-    assert.equal(find(".username").length, 1);
-    assert.equal(find(".password").length, 1);
     assert.equal(find(".password").attr("type"), "password");
+  });
+  fillIn("#username", "user");
+  fillIn(".password", "password");
+  click("#login");
+  andThen(function() {
+      assert.equal(currentURL(), "/sessions");
   });
 });
