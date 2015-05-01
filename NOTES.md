@@ -56,7 +56,7 @@ we can fix the failing assertion again with:
 ## What is this generate command?
 
 - ember-cli has lots of nice [blueprints]
-- I don't use them
+- I don't use many of them
 - I believe they are incredibly helpful for new people learning Ember!
 - Go delete the unit test file for the generated route
 
