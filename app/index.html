@@ -19,6 +19,38 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/code-camp.js"></script>
+    <script>
+        Ember.$.fauxjax.new({
+            request: {
+                method: "GET",
+                url: "/api/sessions"
+            },
+            response: {
+                content: [
+                    {id: 1, name: "Ember.js"},
+                    {id: 2, name: "Spring Boot"}
+                ]
+            }
+        });
+        Ember.$.fauxjax.new({
+            request: {
+                method: "GET",
+                url: "/api/sessions/2"
+            },
+            response: {
+                content: {id: 2, name: "Spring Boot"}
+            }
+        });
+        Ember.$.fauxjax.new({
+            request: {
+                method: "GET",
+                url: "/api/sessions/1"
+            },
+            response: {
+                content: {id: 1, name: "Ember.js"}
+            }
+        });
+    </script>
 
     {{content-for 'body-footer'}}
   </body>

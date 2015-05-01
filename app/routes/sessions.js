@@ -1,10 +1,15 @@
 import Ember from "ember";
+import PromiseMixin from "ember-promise/mixins/promise";
 
 var SessionsRoute = Ember.Route.extend({
     model: function() {
-        var one = {name: "Ember.js"};
-        var two = {name: "Spring Boot"};
-        return [one, two];
+        var sessions = Ember.A([]);
+        PromiseMixin.xhr("/api/sessions").then(function(response) {
+            response.forEach(function(session) {
+                sessions.pushObject(session);
+            });
+        });
+        return sessions;
     }
 });
 

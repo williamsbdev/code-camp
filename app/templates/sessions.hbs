@@ -1,3 +1,4 @@
 {{#each model as |session|}}
-  <div class="session">{{session.name}}</div>
+  {{#link-to "sessions.session" session.id class="session"}}{{session.name}}{{/link-to}}
 {{/each}}
+{{outlet}}
