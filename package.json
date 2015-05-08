@@ -22,6 +22,7 @@
   "devDependencies": {
     "bower": "1.4.1",
     "broccoli-asset-rev": "^2.0.2",
+    "connect-restreamer": "^1.0.2",
     "ember-cli": "0.2.3",
     "ember-cli-app-version": "0.3.3",
     "ember-cli-babel": "^5.0.0",
@@ -32,8 +33,11 @@
     "ember-cli-password-toggle": "1.1.0",
     "ember-cli-qunit": "0.3.10",
     "ember-cli-uglify": "1.0.1",
-    "ember-promise": "0.2.1",
     "ember-export-application-global": "^1.0.2",
+    "ember-promise": "0.2.1",
+    "express": "^4.12.3",
+    "glob": "^4.5.3",
+    "morgan": "^1.5.2",
     "phantomjs": "1.9.16"
   }
 }

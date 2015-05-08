@@ -74,6 +74,14 @@ we can fix the failing assertion again with:
  - an addon is simply a very opinionate node module
  - ember applications know how to pull in and namespace addons
 
+## Server Mocks
+
+    ember generate http-mock login
+    ember g http-mock login
+
+- creates a simple express app that allows you to interact with app in server mode
+- mock any and all requests and provide stub data for responses
+
 ## Let's create an addon
 
     ember addon foobar
