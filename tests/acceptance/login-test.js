@@ -1,8 +1,5 @@
 import Ember from 'ember';
-import {
-    module,
-    test
-} from 'qunit';
+import { module, test } from 'qunit';
 import startApp from 'code-camp/tests/helpers/start-app';
 
 var application;
@@ -20,13 +17,23 @@ module('Acceptance: Login', {
 test('login will transition user to sessions route', function(assert) {
     Ember.$.fauxjax.new({
         request: {
+            method: "POST",
+            url: "/api/login"
+        },
+        response: {
+            status: 200,
+            content: {}
+        }
+    });
+    Ember.$.fauxjax.new({
+        request: {
             method: "GET",
             url: "/api/sessions"
         },
         response: {
             content: [
-                {name: "Ember.js"},
-                {name: "Spring Boot"}
+                {id: 1, name: "Ember.js"},
+                {id: 2, name: "Spring Boot"}
             ]
         }
     });
