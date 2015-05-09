@@ -9,7 +9,7 @@ module.exports = function(app) {
   });
 
   loginRouter.post('/', function(req, res) {
-    res.status(201).end();
+    res.send({});
   });
 
   loginRouter.get('/:id', function(req, res) {
