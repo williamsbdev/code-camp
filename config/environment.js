@@ -43,5 +43,12 @@ module.exports = function(environment) {
 
   }
 
+  ENV.sassOptions = {
+      includePaths: [
+          'bower_components/foundation/scss',
+          'app/styles'
+      ]
+  };
+
   return ENV;
 };
