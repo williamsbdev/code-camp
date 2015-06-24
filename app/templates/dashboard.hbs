@@ -1,1 +1,7 @@
-{{outlet}}
+<div>
+  {{#each slot in model}}
+    <div>Speaker: {{slot.speaker}}</div>
+    <div>Session: {{slot.session}}</div>
+    <br />
+  {{/each}}
+</div>
