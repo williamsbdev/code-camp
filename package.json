@@ -33,6 +33,10 @@
     "ember-cli-sass": "4.0.1",
     "ember-cli-uglify": "^1.0.1",
     "ember-disable-proxy-controllers": "^1.0.0",
-    "ember-export-application-global": "^1.0.2"
+    "ember-export-application-global": "^1.0.2",
+    "ember-promise": "^1.1.1",
+    "express": "^4.13.0",
+    "glob": "^4.5.3",
+    "morgan": "^1.6.0"
   }
 }
