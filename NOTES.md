@@ -78,7 +78,7 @@ we can fix the failing assertion again with:
 
 - ember-cli-sass (version 4.0.1)
 - config/environment.js
-- `ENV.sassOptions = { includePaths: ['bower_components/foundation/scss', 'app/styles']};
+- `ENV.sassOptions = { includePaths: ['bower_components/foundation/scss', 'app/styles']};`
 
 ## Server Mocks
 
