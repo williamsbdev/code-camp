@@ -64,7 +64,7 @@ we can fix the failing assertion again with:
 
 - add login test to show that we need username/password field
 - want to refactor to use the [ember-cli-password-toggle]
- - add ember-cli-password-toggle to package.json (currently version 1.1.0 is latest)
+ - add ember-cli-password-toggle to package.json (version 1.2.0)
  - `npm install`
 
 ## Ember Addons:  How did that work!?!?
@@ -73,6 +73,12 @@ we can fix the failing assertion again with:
  - this is a very easy way to share code across ember applications
  - an addon is simply a very opinionate node module
  - ember applications know how to pull in and namespace addons
+
+## Styling (Another Ember Addon)
+
+- ember-cli-sass (version 4.0.1)
+- config/environment.js
+- `ENV.sassOptions = { includePaths: ['bower_components/foundation/scss', 'app/styles']};
 
 ## Server Mocks
 
