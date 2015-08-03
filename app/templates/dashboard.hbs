@@ -1,7 +1,12 @@
 <div>
-  {{#each slot in model}}
-    <div>Speaker: {{slot.speaker}}</div>
+  {{#each model as |slot|}}
+    {{#link-to "dashboard.speaker" slot.id class="speaker"}}
+      Speaker: {{slot.speaker}}
+    {{/link-to}}
     <div>Session: {{slot.session}}</div>
     <br />
   {{/each}}
+</div>
+<div>
+  {{outlet}}
 </div>

@@ -6,14 +6,16 @@ module.exports = function(app) {
     res.send(
       [
             {
-                id: 1,
+                id: "1",
                 speaker: "Brandon Williams",
-                session: "Ember CLI"
+                favorite_color: "blue",
+                session: "Ember"
             },
             {
-                id: 2,
-                speaker: "Ryan Doll",
-                session: "Intro to Ember"
+                id: "2",
+                speaker: "Darrin Holst",
+                favorite_color: "green",
+                session: "Angular"
             }
       ]
     );
